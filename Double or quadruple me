@@ -11,7 +11,7 @@ public class HandsOn {
 		
 		System.out.println("\nValue: " +  i + "\nQuadrupled: " + quadrupleMe(i));
 		
-		System.out.println("\nValue: " +  i + "\nTimes: " +  quadrupleMe(i) + "\nResult: " +doubleMeTimes(i, i));
+		System.out.println("\nValue: " +  i + "\nTimes: " +  quadrupleMe(i) + "\nResult: " +quadrupleMeTimes(i, i));
 	}
 	
 	
@@ -30,7 +30,7 @@ public class HandsOn {
 	return doubleMe(val);	
 	}
 	
-	public static int doubleMeTimes(int val, int count)
+	public static int quadrupleMeTimes(int val, int count)
 	{
 	
 	count *= quadrupleMe(val);
