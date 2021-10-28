@@ -1,36 +1,51 @@
-
-package com.AnthonyServerahandson2;
+package com.AnthonyServera.handson3;
 
 public class HandsOn {
 
 	public static void main(String[] args) {
 		
-	int age = 15;
-	boolean isStudent = false;
+		
+		int[] arr = {0,0,0,0,0}; 
 	
-	
-	if (age < 0)
+		
+
+		
+		for (int i = 0; i < arr.length; i++)
 		{
-		System.out.println("Ivalid Integer");
-	
+			System.out.println("Enter a number: ");
+			 arr[i] = StudentHelper.ReadInputInt();
+			
+			
 		}
-	else if (age >= 65)
-	{
-		System.out.println("Pay $7");	
-	
-	}
-	else if (isStudent || age <= 12)
-	{
-		System.out.println("Pay $8");
-	}
-	
-	
+		
+		System.out.println("You entered: ");
+		for (int i = 0; i < arr.length; i++)
+			
+		{
+			System.out.println(arr[i]);
+			
+		}
+		
+		System.out.println("Backwards it is: ");
+		for (int i = arr.length - 1; i >= 0; i--)
+		{
+			System.out.println(arr[i]);
+			
+		}
+		
+		System.out.println("Odd entries are: ");
+		for (int i = 0; i < arr.length; i++)
+		{
+			int n = arr[i] % 2;
+			
+			if (n == 1 || n == -1)
+			{
+			System.out.println(arr[i]);
+			}
+			
+			
+		}
+		
 
-	else
-	{
-		System.out.println("Pay $10");
-	}
-
-	}
-}
-
+	} // main bracket
+} // class bracket
